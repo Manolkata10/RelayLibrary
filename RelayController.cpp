@@ -23,7 +23,7 @@ void RelayController::updateRelaysFromMask()
 RelayController::RelayController()
 {
         lastRelayMask = 0;
-        i2c.openFile(0xb0);
+        i2c.openFile(0x58);
 }
 
 RelayController::~RelayController()
