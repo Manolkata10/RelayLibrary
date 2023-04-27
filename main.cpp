@@ -8,8 +8,7 @@ int main()
 
         while (true)
         {
-                std::cout << "Enter operation; 1 - enable; 0 - disable; 2 - exit
-" << std::endl;
+                std::cout << "Enter operation; 1 - enable; 0 - disable; 2 - exit" << std::endl;
                 std::cin >> operation;
 
                 if (operation == 1 || operation == 0)
