@@ -20,6 +20,11 @@ void RelayController::updateRelaysFromMask()
         i2c.sendFile(buffer, 2);
 }
 
+bool RelayController::getLastKnownRelayStateByIndex(unsigned int index)
+{
+        return (bool)(lastRelayMask & (1 << (index % 4)));
+}
+
 RelayController::RelayController()
 {
         lastRelayMask = 0;

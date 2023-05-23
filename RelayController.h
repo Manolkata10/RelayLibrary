@@ -11,6 +11,7 @@ class RelayController
         public:
                 int enableRelayByIndex(unsigned int index);
                 int disableRelayByIndex(unsigned int index);
+                bool getLastKnownRelayStateByIndex(unsigned int index);
 
                 RelayController();
                 ~RelayController();
