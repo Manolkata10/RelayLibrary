@@ -4,7 +4,7 @@ class RelayController
 {
         private:
                 I2C i2c;
-                unsigned char lastRelayMask;
+                char lastRelayMask;
 
                 void updateRelaysFromMask();
 
